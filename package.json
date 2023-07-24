@@ -1,14 +1,16 @@
 {
-  "name": "my-lib",
+  "name": "cr-ui",
   "version": "1.0.0",
   "type": "module",
-  "files": ["dist"],
-  "main": "./dist/my-lib.umd.cjs",
-  "module": "./dist/my-lib.js",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/cr-ui.umd.cjs",
+  "module": "./dist/cr-ui.js",
   "exports": {
     ".": {
-      "import": "./dist/my-lib.js",
-      "require": "./dist/my-lib.umd.cjs"
+      "import": "./dist/cr-ui.js",
+      "require": "./dist/cr-ui.umd.cjs"
     },
     "./style.css": "./dist/style.css"
   },
@@ -18,10 +20,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.0",
     "vue": "^3.3.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
+    "sass": "^1.64.1",
     "vite": "^4.4.0"
   }
 }

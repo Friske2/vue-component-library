@@ -1,10 +1,13 @@
 <script setup>
 import Button from './components/Button.vue'
+const clickMe = () => {
+  console.log('clicked')
+}
 </script>
 
 <template>
   <div>
-    <Button>Hello world</Button>
+    <Button type="info" size="sm" @click="clickMe">Click Me</Button>
   </div>
 </template>
 
